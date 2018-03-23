@@ -1,0 +1,67 @@
+.img-zorro {
+	width: 100%;
+	height: 342px;
+}
+
+#particles-js {
+	background: url("../images/zorro.jpg");
+	width: 100%;
+	height: 100vh;
+	background-size: cover;
+	background-position: center;
+	color: white;
+}
+
+
+
+
+body {
+	position: relative !important;
+	
+}
+
+
+.active{
+	color: #fff !important;
+    background-color: #5cb85c !important;
+    border-color: #5cb85c !important;
+
+}
+
+#Historia{
+
+		background: url('../images/lobo.jpg');
+		background-size: cover;
+		background-position: center;
+
+   }
+/* sirve para la rotacion */
+.rotar {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(-180deg);
+}
+
+/* sirve para dar efecto y diseño a la carga  */
+.loader {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: url('../images/loader.gif') 50% 50% no-repeat rgb(249,249,249);
+    opacity: .8;
+}
+
+
+.content-text{
+
+	position: absolute;
+	z-index: 1;
+}
+
+
+
+/* ____________________ */
+
+

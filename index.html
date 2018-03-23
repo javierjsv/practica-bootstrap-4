@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+     <title>Zoo</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+
+    <link rel="shortcut icon" href="images/icono.ico" />
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+
+
+ 
+   
+
+  </head>
+
+  <body data-spy="scroll" data-target="#menu" >
+
+
+    <!-- fontawesome iconos -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+
+    <!-- java  para cargue de pagina-->
+    <!-- http://programacion.net/articulo/mostrar_la_tipica_imagen_de_carga_cuando_cargue_la_pagina_utilizando_jquery_y_css_1728 -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+
+    <!-- detener el proceso de la carga -->
+
+    <script type="text/javascript">$(window).load(function() { $(".loader").fadeOut("slow");});</script>
+
+    <!-- scroll para ir con efecto -->
+
+    <script src="js/smooth-scroll.min.js"></script>
+
+    <script >
+        var scroll = new SmoothScroll('a[href*="#"]', {
+        // Selectors
+        ignore: '[data-scroll-ignore]', // Selector for links to ignore (must be a valid CSS selector)
+        header: null, // Selector for fixed headers (must be a valid CSS selector)
+
+        // Speed & Easing
+        speed: 700, // Integer. How fast to complete the scroll in milliseconds
+        offset: 0, // Integer or Function returning an integer. How far to offset the scrolling anchor location in pixels
+        easing: 'easeInOutCubic', // Easing pattern to use
+        customEasing: function (time) {
+
+          // Function. Custom easing pattern
+          // If this is set to anything other than null, will override the easing option above
+
+          // return <your formulate with time as a multiplier>
+
+          // Example: easeInOut Quad
+          return time < 0.5 ? 2 * time * time : -1 + (4 - 2 * time) * time;
+
+        },
+
+        // Callback API
+        before: function (anchor, toggle) {}, // Callback to run before scroll
+        after: function (anchor, toggle) {} // Callback to run after scroll
+      });
+    </script>
+
+
+        <!-- para  mostar letreros  tiene conflito con el scroll-->
+
+<!--      <script>$(function () {$('[data-toggle="tooltip"]').tooltip()})</script>   -->
+
+    </body>
+
+
+
+  <header>
+    
+    <!-- Se pone para la carga del git de la imagen de procesos -->
+   <div class="loader"></div>
+    <!-- id="inicio" -->
+
+
+    <div class="content-text w-100">
+      <div class="text-slider d-flex justify-content-center ">
+               <h1 class="pt-5 text-uppercase text-white jello">Fox</h1>   
+      </div>
+    </div>
+      
+      <div  id="particles-js" class="container-fluid  "  >
+
+         
+
+       </div>
+
+        <div class="d-flex flex-row justify-content-end ">
+              <a class=" " >
+                <i class=" m-2 fixed-top text-danger  fab fa-firefox fa-3x" data-toggle="tooltip" data-placement="right" title="fox"></i>
+              </a>
+        </div>   
+        
+     <nav id="menu" class="nav navbar-inverse bg-inverse navbar-toggleable-md fixed-bottom "> 
+
+              <a class="navbar-brand" href="index.html"  data-toggle="tooltip" data-placement="right" title="Proteje a los animales" >
+                  <i class="fab fa-themeisle text-success ml-2  align-items-center" ></i>
+              </a> 
+              <button  class="navbar-toggler navbar-toggler-right " type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
+               aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon" ></span>
+               </button>
+
+                 <div class="collapse navbar-collapse nav-pills nav nav-pills" id="navbarTogglerDemo01" >
+                    <div class="navbar-nav mr-auto ml-auto text-center align-items-center ">
+                         <li class="nav-item">
+                          <a data-scroll   class=" nav-link  active" href="#Contacto" >Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                          <a data-scroll   class=" nav-link " href="#Descuento">descuento</a>
+                        </li>
+                          <li class="nav-item">
+                          <a data-scroll   class=" nav-link " href="#formulario">formulario</a>
+                        </li>
+                          <li class="nav-item">
+                          <a data-scroll   class=" nav-link " href="#Historia">Historia</a>
+                        </li>
+                          <li class="nav-item">
+                          <a data-scroll   class=" nav-link " href="#servicios">servicio</a>
+                        </li>
+                    </div>
+                     <div class="d-flex flex-row justify-content-center">
+                        <a href="" title="" class="btn btn-outline-primary m-2"><i class="fab fa-facebook"></i></a>
+                        <a href="" title="" class="btn btn-outline-danger m-2" ><i class="fab fa-youtube"></i></a>
+                     </div>
+                </div>
+       </nav>
+   
+
+
+
+
+        <section class=" pt-5 pb-5" >
+                            
+            <div class="card-deck container  pt-5 " id="Contacto">
+              <div class="card">
+                <img class="card-img-top img-fluid " src="images/1.jpg" alt="Card image cap">
+                <div class="card-block">
+                  <h4 class="card-title ">Card title</h4>
+                  <p class="card-text  text-justify">This is a longer card with supporting text below as a natural lead-in
+                   to additional content.</p>
+                  <div class="d-flex justify-content-center">
+                    <a href="" class="btn btn-success" title="botón">ver</a>
+                  </div>
+                  
+                </div>
+              </div>
+              <div class="card">
+                <img class="card-img-top img-fluid" src="images/2.jpg" alt="Card image cap">
+                <div class="card-block">
+                  <h4 class="card-title">Card title</h4>
+                  <p class="card-text text-justify">This is a longer card with supporting text below as a natural lead-in
+                   to additional content.</p>
+                   <div class="d-flex justify-content-center">
+                    <a href="" class="btn btn-success" title="botón">ver</a>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <img class="card-img-top img-fluid" src="images/3.jpg" alt="Card image cap">
+                <div class="card-block">
+                   <h4 class="card-title">Card title</h4>
+                  <p class="card-text text-justify">This is a longer card with supporting text below as a natural lead-in
+                   to additional content.</p>
+                    <div class="d-flex justify-content-center">
+                    <a href="" class="btn btn-success" title="botón">ver</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+     
+          <div class="pt-5 mt-5 pb-5 mp-5 container" id="Descuento">
+                 <div class="jumbotron rounded-0" >
+                  <div class="container">
+                   <h1 class="display-3">Hello, world!</h1>
+                    <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra
+                     attention to featured content or information.</p>
+                    <hr class="my-4">
+                    <div class="d-flex justify-content-between align-items-center">
+                      <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+                      <p class="lead">
+                      <a class="btn btn-success btn-lg" href="#" role="button">Ver más</a>
+                      </p>
+                    </div>
+                  </div>
+               </div>
+             </div>
+        
+     <div class="container pt-5 pb-5" id="formulario">
+       <h2 class="display-4 text-center text-capitalize">Formulario</h2>
+       <div class="row d-flex ">
+              <div class="col-6">
+                   <form class="radio-inline">
+                      <div class="form-group">
+                        <label for="">nombre</label>
+                        <input type="text" class="form-control" placeholder="nombre" name="">
+                      </div>
+                      <div class="form-group">
+                        <label for="">email</label>
+                        <input type="email" placeholder="Correo"  class="form-control" name="">
+                      </div>
+                      <div class="">
+                        <button type="submit" class="btn btn-outline-success  mx-2 " >enviar</button>
+                      </div>
+                 </form>  
+
+                 <p class="text-lowercase text-justify text-muted">Lorem ipsum dolor sit amet, 
+                  consectetur adipisicing elit, sed do eiusmod
+                 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                 quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                 consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                 cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                 proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>    
+              </div>
+
+              <div class="col-6 ">
+                
+                   <img class=" img-fluid rounded img-thumbnail" src="images/1.png" alt="Card ">
+                 
+              </div>
+       </div>
+     </div>
+
+     <div class="container-fluid pt-5 pb-5 w-100" id="Historia">
+
+
+          <p class="mt-5 pt-5 pb-5 text-center text-uppercase font-italic font-weight-bold">the fox </p>
+
+          <p class="text-white text-left w-75">Lorem ipsum dolor sit amet, consectetur
+           adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+
+          <p class="text-justify text-danger bg-faded  w-25 float-left mr-4  pb-4">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    
+
+            <p class="w-75 text-white">
+              <strong>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </strong>
+           </p>
+    
+            <p class="h-75  font-weight-bold">Lorem ipsum dolor sit amet, consectetur
+             adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    
+
+          <p class="text-justify text-center bg-warning ">Lorem ipsum dolor sit amet,
+           consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      
+          
+     </div>
+   
+      
+    
+      <div id="servicios"  class="pt-5 pb-5 mb-5 container">
+            <h2 class="display-4 ">servicios</h2>
+
+            <div class="">
+              <div  class="d-flex justify-content-center ">
+                  <img  class="card-img-top img-fluid rounded-circle " src="images/2.png" alt="Card image cap">
+              </div>
+            
+
+             <p class="text-justify text-muted pt-3 ">Lorem ipsum dolor sit amet, consectetur adipisicing 
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p> 
+
+
+            <p class="text-capitalize text-center">Lorem ipsum dolor sit amet,
+             consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </div>
+
+
+            <div class=" clearfix">
+                <i class="fab fa-pagelines float-left  text-success fa-4x rotar" ></i>
+               <i class="fab fa-pagelines float-right  text-success fa-4x"></i>
+
+          </div>
+      </div>
+
+  </header>
+
+
+  <!-- funcion  de las particulas es importan poner ultimo -->
+  <script src="js/particulas/particles.js"></script>
+  <script type="text/javascript" src="js/particulas/app.js"></script>
+
+</html>
+
+
+
